@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\index.css">
+    <link rel="stylesheet" href="css\responcive.css">
+    <link rel="stylesheet" href="css\animation.css">
+</head>
+
+<body >
+    <div class="container">
+        <div class="form">
+            <div class="btn">
+                <div id="btn2"></div>
+                <button type="button" class="btn1" onclick="login()">Login</button>
+                <button type="button" class="btn1" onclick="ragister()">Register</button>
+            </div>
+            <div class="icon">
+                <a href="https://www.instagram.com/" target="_blank"><img src="image\1.png" alt=""></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="image\2.png" alt=""></a>
+                <a href="https://www.twitter.com/" target="_blank"><img src="image/3.png" alt=""></a>
+            </div>
+            <form id="login" class="input_text">
+                <input type="text" class="input_id" placeholder="User ID" required>
+                <input type="text" class="input_id" placeholder="Enter Password" required>
+                <input type="checkbox" class="Checkbox"><span>Remember Password</span>
+                <button type="submit" class="submit">Login</button>
+            </form>
+            <form id="ragister" class="input_text">
+                <input type="text" class="input_id" placeholder="User ID" required>
+                <input type="email" class="input_id" placeholder="email ID" required>
+                <input type="text" class="input_id" placeholder="Enter Password" required>
+                <input type="checkbox" class="Checkbox"><span>Accept all the terms and condition</span>
+                <button type="submit" class="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login")
+        var y = document.getElementById("ragister")
+        var z = document.getElementById("btn2")
+        function ragister() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "-450px";
+            z.style.left = "0px";
+        }
+    </script>
+
+</body>
+
+</html>
